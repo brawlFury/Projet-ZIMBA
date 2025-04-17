@@ -85,6 +85,14 @@
         top: 25px;
     }
 
+    .info_section .map-container {
+        margin-top: 20px; /* Add margin above the map */
+    }
+
+    .info_items_vertical .item:last-child .text-box {
+        margin-bottom: 20px; /* Add margin below the email text */
+    }
+
 }
 
 @media (max-width: 576px) {}

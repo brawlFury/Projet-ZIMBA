@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 abbr[title],
@@ -265,6 +265,8 @@ button,
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button;
+  -moz-appearance: button;    /* For Firefox */
+  appearance: button;         /* Standard property */
 }
 
 button:not(:disabled),
@@ -293,6 +295,8 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   -webkit-appearance: listbox;
+  -moz-appearance: listbox;    /* For Firefox */
+  appearance: listbox;         /* Standard property */
 }
 
 textarea {
@@ -331,6 +335,8 @@ progress {
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: none;
+  -moz-appearance: none;    /* For Firefox */
+  appearance: none;         /* Standard property */
 }
 
 [type="search"]::-webkit-search-decoration {
